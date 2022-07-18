@@ -7,29 +7,27 @@ Github:
 git clone https://github.com/OTAKKATO/exus
 ```
 
-NPM Packages:
+NpmJS:
 ```
-npm i argparse parallel-park request-async fs
+npm i parallel-park commander request-async ssh2-promise fs
 ```
 
 ## Usage
 ```
-usage: index.js [-h] -u URL [-dt DATA] -m METHOD [-p PLUGINS] -user USERNAME -d DICTIONARY
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -u URL, --url URL     The target website login API.
-  -dt DATA, --data DATA
-                        The data to send.
-  -m METHOD, --method METHOD
-                        Method to use.(Supported: GET, POST, PUT, PATCH)
-  -p PLUGINS, --plugins PLUGINS
-                        The plugins to use and they are executed in order.
-  -user USERNAME, --username USERNAME
-                        The target username.
-  -d DICTIONARY, --dictionary DICTIONARY
-                        A file that contains passwords.
+node index.js <service> <args>
 ```
+
+- service - The service to use.
+- args - The args to use in the specified service.
+
+## Example
+```
+node index.js ssh -ip 1.1.1.1 -user admin -d passwords.txt
+```
+
+## Supported Services
+- Website
+- SSH
 
 ## License
 MIT © OTAK
