@@ -1,4 +1,4 @@
-# Exus(Alpha)
+# Exus (Alpha)(Archived for now, will be continued soon)
 Your global login bruteforcer.
 
 ## Installation
